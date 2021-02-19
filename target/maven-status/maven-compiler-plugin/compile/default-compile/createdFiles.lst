@@ -1,0 +1,6 @@
+utility\BrowserUtility.class
+pagefactory\ProductResultsPage.class
+utility\PropertiesFileReader.class
+pagefactory\CartDetailPage.class
+pagefactory\ProductsDetailPage.class
+pagefactory\AmazonHomepage.class

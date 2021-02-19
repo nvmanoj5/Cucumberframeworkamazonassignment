@@ -1,0 +1,122 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-19T03:00:10.988Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2073000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Purchase a product from Amazon",
+        "description": "",
+        "id": "feature-to-amazon-website;purchase-a-product-from-amazon;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 819000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7345000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Open the Amazon Website",
+            "match": {
+              "location": "stepdefinitions.StepDefinition.open_the_Amazon_Website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2158000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Search for the product \"sony home theater 5.1\" and click the desired product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sony home theater 5.1\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.search_for_the_product_and_click_the_desired_product(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2808000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Check the availability as In stock",
+            "match": {
+              "location": "stepdefinitions.StepDefinition.check_the_availability_as_In_stock()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1484000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Add a quantity \"2\" and click Add to cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefinitions.StepDefinition.add_a_quantity_and_click_Add_to_cart(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Go to the cart page and check the product names and total prices",
+            "match": {
+              "location": "stepdefinitions.StepDefinition.go_to_the_cart_page_and_check_the_product_names_and_total_prices()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@purchase"
+          }
+        ]
+      }
+    ],
+    "name": "Feature to Amazon website",
+    "description": "",
+    "id": "feature-to-amazon-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Amazon.feature",
+    "tags": []
+  }
+]
